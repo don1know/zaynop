@@ -5,15 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run jjj && npm run jj",
-    "jj":"node cl.js",
-    "jjj":"node index.js"
+    "start": "npm run dev",
+    "jj": "node cl.js",
+    "jjj": "node index.js",
+    "dev": "concurrently --kill-others \"npm run jj\" \"npm run jjj\""
   },
   "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
     "ws": "^8.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2"
   }
 }

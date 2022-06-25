@@ -4,8 +4,9 @@ import * as fs from 'fs';
 
 var incr =0;
 var nd=0;
+var pop=process.env.PORT;
 
-const wss = new WebSocketServer({ port: 3000 });
+const wss = new WebSocketServer({ port: pop });
 wss.on("connection", function connection(ws, req) {
 
   const ip = req.socket.remoteAddress;

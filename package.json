@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node cl.js",
     "jj": "node cl.js",
     "jjj": "node index.js",
     "dev": "concurrently --kill-others \"npm run jj\" \"npm run jjj\""
